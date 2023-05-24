@@ -40,7 +40,7 @@ export default function Navigation() {
           Book Table
         </a>
       </div>
-      <div className="Nav_container-smallscreen" style={{opacity:'0.95'}}>
+      <div className="Nav_container-smallscreen" style={{ opacity: "0.95" }}>
         <GiHamburgerMenu
           color="#fff"
           fontSize={27}
@@ -55,19 +55,29 @@ export default function Navigation() {
             />
             <ul className="Nav_item-smallscreen">
               <li className="item">
-                <a href="#home">Home</a>
+                <a href="#home" onClick={() => setToggleMenu(false)}>
+                  Home
+                </a>
               </li>
               <li className="item">
-                <a href="#about">About</a>
+                <a href="#about" onClick={() => setToggleMenu(false)}>
+                  About
+                </a>
               </li>
               <li className="item">
-                <a href="#menu">Menu</a>
+                <a href="#menu" onClick={() => setToggleMenu(false)}>
+                  Menu
+                </a>
               </li>
               <li className="item">
-                <a href="#awards">Awards</a>
+                <a href="#awards" onClick={() => setToggleMenu(false)}>
+                  Awards
+                </a>
               </li>
               <li className="item">
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={() => setToggleMenu(false)}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
